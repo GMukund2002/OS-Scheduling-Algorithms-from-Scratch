@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1200</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>WaitCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(243, 248, 251);</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>210</y>
+     <width>401</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(255, 255, 255);
+border-radius: 15px;
+border : 1px solid gray;</string>
+   </property>
+   <widget class="QPushButton" name="submit_button">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>440</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+font-size:17px;
+outline:none;
+font-weight:bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+</string>
+    </property>
+    <property name="text">
+     <string>Submit</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="io_per">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>350</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 5px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-left : 5px;
+border: 1.2px solid #878787;
+background-color: white;
+font-size:16px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>330</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #878787;
+font-size: 18px;
+margin-bottom:5px;
+background-color: white;
+border: white;</string>
+    </property>
+    <property name="text">
+     <string>Complition before I/O (%)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="io">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>260</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 5px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-left : 5px;
+border: 1.2px solid #878787;
+background-color: white;
+font-size:16px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>240</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #878787;
+font-size: 18px;
+margin-bottom:5px;
+background-color: white;
+border:white;</string>
+    </property>
+    <property name="text">
+     <string>I/O (Y/N)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+Color:#000000;
+font-size:40px;
+font-weight:bold;
+background-color: white;
+border:NULL;</string>
+    </property>
+    <property name="text">
+     <string>User Input</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #878787;
+font-size: 18px;
+margin-bottom:5px;
+background-color: white;
+border: white;</string>
+    </property>
+    <property name="text">
+     <string>Burst Time</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="burst_time">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>170</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 5px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-left : 5px;
+border: 1.2px solid #878787;
+background-color: white;
+font-size:16px;</string>
+    </property>
+   </widget>
+   <zorder>io_per</zorder>
+   <zorder>label_4</zorder>
+   <zorder>io</zorder>
+   <zorder>label_3</zorder>
+   <zorder>submit_button</zorder>
+   <zorder>label</zorder>
+   <zorder>label_5</zorder>
+   <zorder>burst_time</zorder>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>211</y>
+     <width>1000</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 100%;
+text-align: center;
+font-size: 17px;
+background-color: rgb(255, 255, 255);
+border: 1px solid gray;
+font: 8.5pt &quot;Yu Gothic UI&quot;;
+border-radius:2px;</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Process ID</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="icon">
+     <iconset theme="application-exit">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Arrival Time</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>I/O (Y/N)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Complition before I/O (%)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Burst Time</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="submit_button_2">
+   <property name="geometry">
+    <rect>
+     <x>1680</x>
+     <y>810</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+font-size:17px;
+outline:none;
+font-weight:bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+</string>
+   </property>
+   <property name="text">
+    <string>Calculate</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>950</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+Color:#000000;
+font-size:30px;
+font-weight:bold;
+background-color: none;
+border:NULL;</string>
+   </property>
+   <property name="text">
+    <string>Gantt Chart</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
